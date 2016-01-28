@@ -1,0 +1,21 @@
+# Very important that the PHP files are never cached
+<FilesMatch "\.(php)$">
+Header set Cache-Control "max-age=0, no-cache, no-store"
+</FilesMatch>
+
+# Everything else can be cached for 24 hours no problem
+<FilesMatch "\.(ico|png|xml|gif|jpg)$">
+Header set Cache-Control "public, max-age=86400"
+</FilesMatch>
+
+# GZip compression should reduce the bandwidth requirements significantly
+<ifModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_exclude mime ^image/.*
+  mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>

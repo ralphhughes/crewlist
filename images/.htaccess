@@ -1,0 +1,6 @@
+<FilesMatch "\.(php)$">
+Header set Cache-Control "max-age=0, no-cache, no-store"
+</FilesMatch>
+<FilesMatch "\.(ico|png|xml|gif|jpg)$">
+Header set Cache-Control "public, max-age=86400"
+</FilesMatch>
