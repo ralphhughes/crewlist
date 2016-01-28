@@ -51,36 +51,8 @@ function createTables($db) {
     $db->exec($createCrewSQL);
     
     $populateCrewTable = "INSERT INTO `crew` (`name`, `hash`, `primaryRole`, `status`) VALUES
-                        ('Aled Williams', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Alex Farquharson', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Andy Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Dan Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Danny Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Dave Davis', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Dave Roberts', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('David Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Glyn Chambers', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Graham Heritage', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', 'Coxswain', 'Available'),
-                        ('Ian Appleton', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('James Salt', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Keith Charlton', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Kelsey Byrne', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Les Howell', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Les Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', 'Mechanic', 'Available'),
-                        ('Luke Heritage ', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', 'Helm', 'Away'),
-                        ('Matt Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Nigel Forrest', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Phillip Howells', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Ralph Hughes', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', 'Crew', 'Available'),
-                        ('Ray Evans', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Rob Shields', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Robin Holden', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Simon Hajahmed', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Steve Howard', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Sue Davies', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Tim James', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Vinny Hill', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
-                        ('Wesley Jones', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL);";
+                        ('Mr Test', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL),
+                        ('A N Other', '9e468662812f45d0558e113a4b263fe79a657a32ced55af2b02b50630e5533bc', NULL, NULL);";
     $db->exec($populateCrewTable);
             
     
